@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Express.js
+.env
+
+# MongoDB
+*.log
+*.log.*
+/data
+/db
+# Node.js
+node_modules/
+
+# Express.js
+.env
+
+# MongoDB
+*.log
+*.log.*
+/data
+/db

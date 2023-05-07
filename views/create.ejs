@@ -1,0 +1,8 @@
+<%- include("header") -%>
+<h1 class="list-title boxnew">Create new list: 
+    <form action="/create" method="post" class="item">
+        <input type="text" class= "inputtext" name="newList" value="<%=listTitle %>" placeholder="Create a cool list, like '<%= randomTitleEJS%>'">
+        <button type="submit" name="list">+</button>
+    </form>
+</h1>
+<%- include("footer") -%>
