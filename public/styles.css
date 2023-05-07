@@ -111,6 +111,12 @@ footer {
   text-align: center;
 }
 
+footerabout {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
 header {
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -295,5 +301,13 @@ header {
 }
 
 .footer span:nth-child(odd) {
+  color: whitesmoke;
+}
+
+.footerabout span:nth-child(even) {
+  color: black;
+}
+
+.footerabout span:nth-child(odd) {
   color: whitesmoke;
 }
