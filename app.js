@@ -196,7 +196,7 @@ app.post("/delete", function(req, res){
 
 
 
-app.listen(3000 || process.env.PORT, function(){
+app.listen(3000 || process.env.PORT, process.env.ip, function(){
     const url="http://localhost:3000";
     console.log("App is listening on port 3000: "+url);
 })
