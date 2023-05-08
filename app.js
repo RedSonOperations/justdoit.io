@@ -4,6 +4,7 @@ const mongoose=require('mongoose');
 const lodash=require('lodash');
 let alert=require('alert');
 const date=require(__dirname+"/date.js");
+require('dotenv').config({ path: '/Users/aleckain/toDoList-v1/.env'})
 
 const app=express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,8 +15,7 @@ let nameItRandom=["Groceries", "Fiesta invitations", "Christmas card recipients"
 let randomNum=Math.floor(Math.random()*nameItRandom.length);
 let randomTitle=nameItRandom[randomNum];
 
-mongoose.connect("mongodb://localhost:27017/toDoListDB", {useNewURLParser: true});
-
+mongoose.connect(`mongodb+srv://${process.env.mongoUser}:${process.env.mongoPass}@cluster0.lhhytm3.mongodb.net/toDoListDB?retryWrites=true&w=majority`, {useNewURLParser: true});
 const itemsSchema=new mongoose.Schema({
     name: String
 })
